@@ -28,4 +28,3 @@ function generatePassword() {
     password.innerHTML = pass;
     newPassword = pass;
 }
-
