@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keyworks" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Geradir de senhas</title>
+    <title>Gerador de senhas</title>
 </head>
 <body>
-    <img class="logo" src="./assets/img/logo.png" alt="Gerador de senha logo" />
-    <main class="Container">
-
+    <img class="logo" src="./assets/img/logo.png" alt="logo do gerador" />
+    <main class="container-main">
+        <span>Tamanho <span id="Tamanho-valor"></span> caracteres</span> <!-- utilizando span para manipular a nivel de linha/ divs são usadas somente para nivel de bloco -->
+        <input id="slider" class="container-slider" type="range" min="6" max="30" value="6">
+        <button id="container-button" class="container-button">Gerar senha</button>
     </main>
+    <div id="container-password" class="container-password-hiden"></div>
+    <span class="titler">A senha Gerada é :</span>
+    <span id="password">123</span>
+    <span>Clique na senha para copiar. 😜</span>
+
+    <script src="./assets/JS/Main.js"></script>
 </body>
 </html>
